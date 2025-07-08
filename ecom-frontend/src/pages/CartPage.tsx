@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 // Define the structure of each cart item
 interface CartItem {
@@ -59,6 +59,8 @@ function CartPage() {
             </div>
           ))}
           <h3>Total: ₹{total}</h3>
+          <Link to="/checkout">Go to Checkout</Link>
+
           <button onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
         </div>
       )}

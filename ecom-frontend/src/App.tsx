@@ -7,6 +7,7 @@ import ConfirmationPage from "./pages/ConfirmationPage";
 import AdminPage from "./pages/AdminPage";
 import AdminProductList from "./pages/AdminProductList";
 import EditProduct from "./pages/EditProduct";
+import MockCheckoutPage from "./pages/MockCheckoutPage";
 
 
 
@@ -21,6 +22,8 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/admin/products" element={<AdminProductList />} />
         <Route path="/admin/products/edit/:id" element={<EditProduct />} />
+        <Route path="/checkout" element={<MockCheckoutPage />} />
+
 
         
       </Routes>

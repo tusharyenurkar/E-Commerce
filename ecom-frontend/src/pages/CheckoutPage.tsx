@@ -121,6 +121,7 @@ function CheckoutPage() {
           </div>
 
           <h3>Total: ₹{total}</h3>
+          
           <button type="submit">Place Order</button>
         </form>
       )}
